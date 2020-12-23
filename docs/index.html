@@ -2,6 +2,15 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S6WYD52XE3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-S6WYD52XE3');
+    </script>
     <title>Can Gökçeaslan - Ink</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -55,9 +64,18 @@
             <iframe id="background-video-frame" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
-    <div style="position:fixed;right:20px;bottom:20px;height:250px;width:250px">
-        <img src="./assets/images/qr.png" width="250" height="250" alt="QR Image for Ink Url" />
-    </div>
+    <a href="./assets/images/qr.png" target="__blank" download="./assets/images/qr.png"
+        class="animate__animated animate__slideInUp" id="qr"
+        style="position:fixed;right:20px;bottom:20px;height:180px;width:180px">
+        <img src="./assets/images/qr.png" width="180" height="180" alt="QR Image for Ink Url" />
+    </a>
+    <script>
+        if (window.innerWidth > 1280) {
+
+        } else {
+            document.getElementById("qr").remove();
+        }
+    </script>
     <!-- <div class="reachMe animate__animated animate__slideInRight" id="bottom-contacter">
         <div role="button" id="icon-container">
             <i class="fas far fa-inbox icon-container"></i>
